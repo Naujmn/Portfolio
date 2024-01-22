@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">PORTFOLIO</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#skill" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROJECTS</a></li>
+            <!--<li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>-->
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="Imagenes/IMG_Juan.jpg" alt="Juan Mosquera" />
+        </div>
+        <h1>JUAN MOSQUERA</h1>
+        <h2>
+          Business Intelligence and Data Analytics Expert | Industrial Engineer
+        </h2>
+        <div class="redes">
+          <!--<a href="#"><i class="fa-brands fa-facebook-f"></i></a>-->
+          <!--<a href="#"><i class="fa-brands fa-twitter"></i></a>-->
+          <!--<a href="#"><i class="fa-brands fa-skype"></i></a>-->
+          <a
+            href="https://www.linkedin.com/in/juan-david-mosquera-neira/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <!--<a href="#"><i class="fa-solid fa-rss"></i></a>-->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>About Me</h2>
+        <p>
+          <span>Hi, I'm Juan Mosquera.</span> I have over two years of
+          experience in Business Intelligence and Data Analytics, having built
+          my professional trajectory at the intersection of engineering and
+          strategic decision-making. With a strong background in leading
+          companies in payment and marketing sectors, I have honed my ability to
+          translate complex data into actionable insights that drive business
+          growth. 
+        </p>
+        <p>My analytical approach has been instrumental in optimizing
+          operations, identifying improvement opportunities, and crafting
+          effective strategies. I am excited to bring my technical expertise and
+          strategic vision to a dynamic team, where I can continue to drive
+          innovation and business performance.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Contact Information</h3>
+            <ul>
+              <li>
+                <strong>Address</strong>
+                Bogotá, Colombia
+              </li>
+              <li>
+                <strong>Cell</strong>
+                +57 3134800647
+              </li>
+              <li>
+                <strong>Email</strong>
+                moneijuan@gmail.com
+              </li>
+              <li>
+                <strong>Position</strong>
+                <span>DATA ANALYTICS</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Interests</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LEARN</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-football"></i>
+                <span>SPORTS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-pen-nib"></i>
+                <span>DESIGN</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSIC</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>TRAVEL</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>GAMES</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>CARS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>PHOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="Imagenes/CV JUAN MOSQUERA.pdf" download="">
+            Download CV <i class="fa-solid fa-download"></i
+          ></a>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+
+     <!-- SECCION CURRICULUM -->
+     <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Training</h3>
+            <div class="item izq">
+              <h4>Master in Business Intelligence and Data Analytics</h4>
+              <span class="casa">IEBS Business School, Barcelona</span>
+              <span class="fecha">2021 - 2023</span>
+              <!---<p> Texto </p> --->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Industrial Engineer</h4>
+              <span class="casa"
+                >Universidad de la Sabana, Chía-Cundinamarca</span
+              >
+              <span class="fecha">2017 - 2022</span>
+              <!---<p> texto  </p>--->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificate Web Development</h4>
+              <span class="casa">CoderHouse</span>
+              <span class="fecha">2023</span>
+              <!---<p> texto  </p>--->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificate Transact-SQL</h4>
+              <span class="casa">The SQL of School</span>
+              <span class="fecha">2023</span>
+              <!--<p>pendiente</p>-->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Badge GitHub Universe 2023 Cloud Skills Challenge</h4>
+              <span class="casa">Microsoft Learn</span>
+              <span class="fecha">2023</span>
+              <!--<p>pendiente</p>-->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificate KAIZEN™ Lean Manufacturing - Foundations</h4>
+              <span class="casa"
+                >Universidad de la Sabana-Kaizen Institute,
+                Chía-Cundinamarca</span
+              >
+              <span class="fecha">2021</span>
+              <!---<p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
+                cumque repellat, tempora recusandae aliquam nemo esse natus
+                impedit, nostrum temporibus veritatis eaque soluta aperiam id
+                repudiandae fugiat deserunt! Explicabo, veritatis?
+              </p>--->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Certificate Professional Ethics</h4>
+              <span class="casa"
+                >COPNIA-Consejo Profesional Nacional de Ingeniería</span
+              >
+              <span class="fecha">2021</span>
+              <!---<p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
+                cumque repellat, tempora recusandae aliquam nemo esse natus
+                impedit, nostrum temporibus veritatis eaque soluta aperiam id
+                repudiandae fugiat deserunt! Explicabo, veritatis?
+              </p>--->
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Work Experience</h3>
+            <div class="item der">
+              <h4>Data Analytics</h4>
+              <span class="casa">Mediabrands</span>
+              <span class="fecha">Dic 2022 - Present</span>
+              <p>Create databases using SQL Server for new clients.</p>
+              <p>
+                Responsible for updating daily databases using Python to
+                download and store in SQL Server.
+              </p>
+              <p>
+                Design and develop interactive and visually appealing dashboards
+                using tools such as Tableau.
+              </p>
+              <p>Develop ELT processes with Alteryx tool.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Assoc Solution Consultant</h4>
+              <span class="casa">ACI Worldwide</span>
+              <span class="fecha">Feb 2022 - Dic 2022</span>
+              <p>
+                Create tools to optimize the time and quality of the
+                consultant's interactions both internally and with the end
+                customer.
+              </p>
+              <p>
+                Perform tracking reports, corporate CRM dashboards and dashboard
+                development.
+              </p>
+              <p>
+                Document analysis and entry strategies for new payment industry
+                segments.
+              </p>
+              <p>
+                Support the consultant's daily work with specific documents upon
+                request for opportunities, specific tasks that enable
+                positioning and market opening.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- SECCION CERTIFICADOS -->
+    <section>
+      <div class="slider">
+        <div class="contenedor">
+            <div class="slide">
+                <img src="./Imagenes/Diploma Master Business Intelligence y Analisis de Datos.jpg" alt="Master in Business Intelligence and Data Analytics">
+            </div>
+            <div class="slide">
+                <img src="./Imagenes/Diploma Ingeniero Industrial.jpg" alt="Industrial Engineer">
+            </div>
+            <div class="slide">
+                <img src="./Imagenes/Certificado Desarrollo Web.png" alt="Certificate Web Development">
+            </div>
+            <div class="slide">
+                <img src="./Imagenes/Certificado Transact-SQL.jpg" alt="Certificate Transact-SQL">
+            </div>
+            <div class="slide">
+                <img src="./Imagenes/Certificado GitHub Universe.PNG" alt="Badge GitHub Universe 2023 Cloud Skills Challenge">
+            </div>
+            <div class="slide">
+                <img src="./Imagenes/Certificado Kaizen.jpg" alt="Certificate KAIZEN™ Lean Manufacturing - Foundations">
+            </div>
+            <div class="slide">
+              <img src="./Imagenes/Certificado Copnia.jpg" alt="Certificate Professional Ethics">
+            </div>
+            <div class="slide">
+              <img src="./Imagenes/Diploma Master Business Intelligence y Analisis de Datos.jpg" alt="Master in Business Intelligence and Data Analytics">
+          </div>
+          <div class="slide">
+              <img src="./Imagenes/Diploma Ingeniero Industrial.jpg" alt="Industrial Engineer">
+          </div>
+          <div class="slide">
+              <img src="./Imagenes/Certificado Desarrollo Web.png" alt="Certificate Web Development">
+          </div>
+          <div class="slide">
+              <img src="./Imagenes/Certificado Transact-SQL.jpg" alt="Certificate Transact-SQL">
+          </div>
+          <div class="slide">
+              <img src="./Imagenes/Certificado GitHub Universe.PNG" alt="Badge GitHub Universe 2023 Cloud Skills Challenge">
+          </div>
+          <div class="slide">
+              <img src="./Imagenes/Certificado Kaizen.jpg" alt="Certificate KAIZEN™ Lean Manufacturing - Foundations">
+          </div>
+          <div class="slide">
+            <img src="./Imagenes/Certificado Copnia.jpg" alt="Certificate Professional Ethics">
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <!--SKILLS-->
+    <section class="skill" id="skill">
+      <div class="contenido-skill">
+          <h2>SKILLS</h2>
+        <div class="logos">
+            <div class="programs">
+              <img src="./Imagenes/Tableau.png" alt="Tableau">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Power-Bi.png" alt="Power BI">
+            </div>
+            <div class="programss">
+              <img src="./Imagenes/Alteryx.png" alt="Alteryx">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Sql-server.png" alt="SQL Server">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Python.png" alt="Python">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Excel.png" alt="Excel">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Html.png" alt="HTML">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Css.png" alt="CSS">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Git.png" alt="Git">
+            </div>
+            <div class="programs">
+              <img src="./Imagenes/Github.png" alt="GitHub">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="./Imagenes/Portada_datos_carros.PNG" alt="" />
+            <div class="overlay">
+              <h3>Data Horizon Wheels</h3>
+              <p>Dashboard</p>
+              <a href="./Portafolio/Datacars.html">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    
+    <!--
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+        -->
+          <!-- Technical Skill -->
+    <!--
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Power BI</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Tableau</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Alteryx</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>84%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL Server</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Azure</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      -->
+          <!-- Professional Skills -->
+  <!--
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Communication</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Teamwork</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creativity and Innovation</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedication</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>86%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Continuous Learning</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Adaptability</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+   
+
+    <!-- SECCION CONTACTO -->
+  <!--
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACT</h2>
+        <div class="fila">
+  -->
+          <!-- Formulario -->
+  <!--
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+        -->
+          <!-- Mapa -->
+  <!--
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Nicaragua 159, San Rafael Mza
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: 2384 - 4343443
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: cw@example.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <!--<div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    -->
+      <div>
+        <h4>
+          Thank you very much for coming here and I hope you liked my work.
+        </h4>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

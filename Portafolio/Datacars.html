@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>Data Horizon Wheels</title>
+    <link rel="stylesheet" href="../sdatos.css" />
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+          <div class="logo">             
+            <a href="#">PORTFOLIO</a>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li><a href="../index.html" onclick="seleccionar()">Return</a></li>
+          </nav>
+        </header>
+      </div>
+   <section>
+    <div class="titulo">
+      <h1>Data Horizon Wheels</h1>
+      <p>To begin with we looked for a database that related to the topic of automobiles, the database was taken from the Kaggel page.</p>
+    </div>
+
+    <div  class="informacion">
+      <p>When reviewing the Excel data I could see that the data was poorly structured, therefore, I made some arrangements within the file and then went on to perform an <span>ETL in the Alteryx program.</span></p>
+      <p>In the first part is the Initial Data where we place directly the Excel file, I placed a Select to identify the variables that interest me and what format they have, we continue with the creation of two formulas.</p>
+      <p>In the <span>first formula</span> what is planned is to see the <span>price of cars in 4 other countries</span> which are: Colombia, Brazil, Argentina and Mexico, each with a corresponding TRM.</p>
+      <p>In the <span>second formula</span> what was done is to <span>create the variable Country</span> as it is a fundamental variable to identify the country of the company, with that you could make a comparison between companies in the same country and number of companies per country.</p>
+      <p>Finally I have a part of Check Point to be able to check if the formulas were well and the Data Dashboard which is the data that will be saved to go directly to a visualization tool such as Tableau, Power BI, Data Studio or Qlik Sense.</p>
+      <img src="../Imagenes/alteryx-cars.png" alt="Flow Alteryx Cars">
+    </div>
+
+    <div class="dashconte">
+      <h2>Creation of Dashboard</h2>
+      <p>It is good to make a recognition of the variables that compose the data that will be used for the dashboards:</p>
+    </div>
+  <section class="dashboard">
+    <div class="first">
+      <p><i class="fa-solid fa-earth-americas fa-beat"></i> <span>Country:</span> it shows the corresponding countries where the car brands were created.</p>
+      <p><i class="fa-solid fa-building fa-beat"></i>	<span>Company:</span> Car company.
+      <p><i class="fa-solid fa-car fa-beat"></i> <span>Model:</span> Shows the different models of cars in each company.</p>
+      <p><i class="fa-solid fa-horse fa-beat"></i>	<span>Horsepower:</span> It is the horsepower that each car model has.</p>
+      <p><i class="fa-solid fa-rocket fa-beat"></i>	<span>Torque:</span> It is the amount of force necessary to produce a rotational movement.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i>	<span>Transmission Type:</span> The number of gears a car has.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i>	<span>Drivetrain:</span> The type of transmission in an automobile.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i> <span>Fuel Economy:</span> It is the economy of the car.</p>
+      <p><i class="fa-solid fa-hashtag fa-beat"></i> <span>Number of Doors:</span> The number of doors of each car. </p>
+    </div>
+    <div class="second">
+      <p><i class="fa-solid fa-calendar-days fa-beat"></i> <span>Model Year Range:</span> The period of time it was on the market.</p>
+      <p><i class="fa-solid fa-car fa-beat"></i> <span>Body Type:</span> We are talking about the type of bodywork.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i> <span>Engine Type:</span> It is the type of engine of each car.</p>
+      <p><i class="fa-solid fa-hashtag fa-beat"></i> <span>Number of Cylinders:</span> It is the number of cylinders that the engines have.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>Price:</span> The price of each car in dollars.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>COL Price:</span> It is the price of each car in Colombian pesos.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>BRL Price:</span> The price of each car in Reais.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>ARG Price:</span> It is the price of each car in Argentinean pesos.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>MXN: Price:</span> It is the price of each car in Mexican Pesos.</p>
+    </div>
+  </section>
+  <div class="filter">
+    <p>
+      <span>The country</span> of reference of each car <span> did not appear in the original database</span>, therefore, it was necessary to 
+      investigate and <span>create the variable "Country"</span> with the corresponding country of each car, with this it was possible 
+      to create a filter by country.
+    </p>
+    <p>Continuing we <span>created a parameter</span> with the name <span>"Type Currency"</span> where we placed the <span>different corresponding 
+      currencies</span> such as Brazil, Argentina, Colombia and the United States, so that the user can show the price that 
+      best suits him.
+    </p>
+    <img src="../Imagenes/Type Currency.JPG" alt="Type Currency">
+  </div>
+  <section id="cars" class="cars">
+      <div class="data">
+      <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://public.tableau.com/views/DataCars_17020218098960/DashboardCars?:language=es-ES&:display_count=n&:origin=viz_share_link' 
+      width='1300' height='800' hide-tabs toolbar='bottom' ></tableau-viz>
+    </div>
+  </section>
+  </section> 
+</body>
+</html>
