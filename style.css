@@ -15,7 +15,8 @@ html {
 
 
 .contenedor-header {
-  background: #fff;
+  /*background: #fff;*/
+  background: #202448;
   position: fixed;
   width: 100%;
   top: 0;
@@ -33,27 +34,33 @@ html {
 .contenedor-header header .logo a {
   font-family: "Righteous";
   font-size: 40px;
-  color: #38618c;
+  color: #ffffff;
+  /*color: #38618c;*/
   text-decoration: none;
 }
 .contenedor-header header ul {
   display: flex;
   list-style: none;
+  background: #202448;
 }
 .contenedor-header header nav ul li a {
   text-align: none;
-  color: #38618c;
+  color: #fff;
+  /*color: #38618c;*/
   margin: 0 15px;
   padding: 3px;
   transition: 0.5s;
   text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover {
-  color: #35a7ff;
+  color: #1428db;
+  /*color: #35a7ff;*/
 }
 .nav-responsive {
-  background-color: #38618c;
-  color: #fff;
+  background-color: #fff;
+  /*background-color: #38618c;*/
+  color: #202448;
+  /*color: #fff;*/
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -70,47 +77,50 @@ html {
       rgba(30, 35, 38, 0.3),
       rgba(30, 35, 38, 1)
     ),
-    url(Imagenes/Background\ Data.jpg);
+    url(Imagenes/Fondo2.png);
   background-size: cover;
   height: 100vh;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
 }
 .inicio .contenido-banner {
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff88;
   max-width: 450px;
-  max-height: 570px;
+  max-height: 580px;
   margin: auto;
   text-align: center;
   border-radius: 40px;
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid #38618c;
+  /*border: 10px solid #38618c;*/
   display: block;
   width: 80%;
   margin: auto;
   border-radius: 100%;
 }
 .inicio .contenido-banner h1 {
-  color: #38618c;
+  /*color: #38618c;*/
+  color: #3e3b48;
   margin-top: 30px;
   font-size: 42px;
   font-family: "Righteous";
 }
 .inicio .contenido-banner h2 {
-  color: #ffa135e7;
+  color: #1428db;
   font-size: 20px;
   font-weight: normal;
   margin-top: 10px;
 }
 .inicio .contenido-banner .redes a {
-  color: #ffa135e7;
+  /*color: #ffa135e7;*/
+  color: #fff;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #ffa135e7;
+  /*border: 1px solid #ffa135e7;*/
+  border: 1px solid #fff;
   border-radius: 100%;
   width: 42px;
   height: 42px;
@@ -120,7 +130,7 @@ html {
   transition: 0.3s;
 }
 .inicio .contenido-banner .redes a:hover {
-  background-color: #38618c;
+  background-color: #1428db;
   color: #fff;
   border: #fff;
 }
@@ -130,8 +140,10 @@ html {
 
 
 .sobremi {
-  background-color: #ffa135e7;
-  color: #fff;
+  /*background-color: #ffa135e7;*/
+  background-color: #fff;
+  /*color: #fff;*/
+  color: #575366;
   padding: 50px 20px;
 }
 .sobremi .contenido-seccion {
@@ -150,9 +162,10 @@ html {
   margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span {
-  background-color: #35a7ff;
+  /*background-color: #35a7ff;*/
+  background-color: #1428db;
   border-radius: 5px;
-  
+  padding: 3px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -176,11 +189,13 @@ html {
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
-  color: #fff;
+  color: #575366;
   width: 130px;
 }
 .sobremi .fila .col ul li span {
-  background-color: #35a7ff;
+  /*background-color: #35a7ff;*/
+  background-color: #1428db;
+  color: #fff;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
@@ -192,7 +207,8 @@ html {
 .sobremi .fila .col .contenedor-intereses .interes {
   width: 100px;
   height: 100px;
-  background-color: #38618c;
+  /*background-color: #38618c;*/
+  background-color: #6e7dab;
   color: #fff;
   border-radius: 10px;
   margin: 0 15px 15px 0;
@@ -203,7 +219,8 @@ html {
   transition: 0.3s;
 }
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-  background-color: #35a7ff;
+  /*background-color: #35a7ff;*/
+  background-color: #1428db;
   color: #fff;
 }
 .sobremi .fila .col .contenedor-intereses .interes i {
@@ -213,7 +230,8 @@ html {
 .sobremi button {
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #fff;
+  /*border: 2px solid #fff;*/
+  border: 2px solid #6e7dab;
   border-radius: 10px;
   width: fit-content;
   display: block;
@@ -225,13 +243,20 @@ html {
   position: relative;
   z-index: 10;
 }
+.sobremi button a {
+  text-decoration: none;
+  /*color: #fff;*/
+  color: #6e7dab;
+}
 .sobremi button .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #35a7ff;
+  /*background-color: #35a7ff;*/
+  background-color: #1428db;
+  color: #fff;
   border-radius: 7px;
   z-index: -1;
   transition: width 1s;
@@ -239,17 +264,15 @@ html {
 .sobremi button:hover .overlay {
   width: 100%;
 }
-.sobremi button a {
-  text-decoration: none;
-  color: #fff;
-}
+
+
 
 
 /* SECCION S K I L L S */
 
 
 .skills {
-  background-color: #ffa135e7;
+  background-color: #1e9014e7;
   color: #fff;
   padding: 50px 20px;
 }
@@ -460,10 +483,14 @@ html {
     width: 90%;
   }
 }
-/* SECCION CURRICULUM */
+
+
+
+
+/* SECCION CURRICULUM #575366 */
 .curriculum {
   background-color: #fff;
-  color: #35a7ff;
+  color: #1428db;
   padding: 50px 20px;
 }
 .curriculum .contenido-seccion {
@@ -473,6 +500,7 @@ html {
 .curriculum h2 {
   font-size: 48px;
   font-family: "Righteous";
+  color: #575366;
   text-align: center;
   padding: 20px 0;
 }
@@ -488,12 +516,13 @@ html {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
+  text-align: center;
 }
 .curriculum .fila .izquierda {
-  border-right: 2px solid #35a7ff;
+  border-right: 2px solid #1428db;
 }
 .curriculum .fila .derecha {
-  border-left: 2px solid #35a7ff;
+  border-left: 2px solid #1428db;
 }
 .curriculum .fila .item {
   padding: 25px;
@@ -522,16 +551,16 @@ html {
   color: #38618c;
 }
 .curriculum .fila .izq {
-  border-right: 2px solid #35a7ff;
+  border-right: 2px solid #1428db;
   margin-right: 20px;
 }
 .curriculum .fila .der {
-  border-left: 2px solid #35a7ff;
+  border-left: 2px solid #1428db;
   margin-left: 20px;
 }
 .curriculum .fila .item .conectori {
   height: 2px;
-  background-color: #35a7ff;
+  background-color: #1428db;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -543,14 +572,14 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #35a7ff;
+  background-color: #1428db;
   float: right;
   position: relative;
   bottom: 4px;
 }
 .curriculum .fila .item .conectord {
   height: 2px;
-  background-color: #35a7ff;
+  background-color: #1428db;
   width: 47px;
   position: absolute;
   top: 50%;
@@ -562,7 +591,7 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #35a7ff;
+  background-color: #1428db;
   float: left;
   position: relative;
   bottom: 4px;
@@ -584,7 +613,7 @@ html {
   align-items: center;
   animation: scroll 40s linear infinite;
   -webkit-animation: scroll 40s linear infinite;
-  width: calc(500px * 14);
+  width: calc(500px * 16);
 }
 
 .slider .slide {
@@ -611,14 +640,25 @@ html {
 
 /* SECCION SKILL */
 .skill {
-  background-color: #ffa135e7;
-  color: #fff;
+  /*background-color: #ffa135e7;*/
+  /*background-color: #6e7dab;*/
+  /*color: #fff;*/
   padding: 50px 20px;
+  position: relative;
+  background: #fff;
 }
 .skill .contenido-skill {
     max-width: 1100px;
     margin: auto;
-} 
+}
+.skill .contenido-skill h2 {
+  /*color: #fff;*/
+  color: #575366;
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0;
+  }
 .skill .logos {
   display: flex;
   justify-content: center;
@@ -626,11 +666,19 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.skill .programss img{
+.skill .programs img{
   width: 96px;
   height: auto;
+   transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
 }
-
+.skill .programs img:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+}
+              
 
 /* SECCION PORTFOLIO */
 
@@ -644,7 +692,8 @@ html {
   margin: auto;
 }
 .portfolio h2 {
-  color: #38618c;
+  /*color: #38618c;*/
+  color: #575366;
   font-size: 48px;
   font-family: "Righteous";
   text-align: center;
@@ -679,7 +728,7 @@ html {
   height: 100%;
   text-align: center;
   border-radius: 10px;
-  background: linear-gradient(#35a7ffa1, #35a7ff9a);
+  background: linear-gradient(#5761d5bb, #6e7dab93);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -695,9 +744,9 @@ html {
 .portfolio .galeria .proyecto .overlay a {
  text-decoration: none;
  margin-top: 13px;
- background-color: #ffa135e7;
+ background-color: #575366;
  color:#fff;
- 
+
 }
 .portfolio .galeria .proyecto .overlay:hover {
   opacity: 1;
@@ -705,7 +754,18 @@ html {
 .portfolio .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0px;
 }
-
+.portfolio .galeria .proyecto .overlay .tools {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; 
+  margin-top: 10px;
+}
+.portfolio .galeria .proyecto .overlay .tools img {
+  width: 35px;
+  height: auto;
+}
 
 
 /* SECCION CONTACTO */
@@ -798,7 +858,7 @@ html {
 
 */
 footer {
-  background-color: #ffa135e7;
+  background-color: #202448;
   color: #fff;
   padding: 50px 0 50px 0;
   text-align: center;
@@ -829,7 +889,7 @@ footer .arriba {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #35a7ff;
+  background-color: #1428db;
   color: #fff;
   position: absolute;
   left: 50%;
