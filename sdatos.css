@@ -61,11 +61,11 @@
   }
   .titulo h1{
     font-family: "Righteous";
-    font-size: 40px;
+    font-size: 50px;
     color: #1428db;
   }
   .titulo p {
-
+    
     color: #575366;
     font-size: 14px;
     margin-top: 10px;
@@ -77,11 +77,17 @@
     /*opacity: 80%;*/
     text-align: center;
   }
+   .informacion h2{
+    font-family: "Righteous";
+    font-size: 28px;
+    color: #1428db;
+  }
   .informacion p {
     color: #575366;
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     text-align: justify;
   }
   .informacion p span{
@@ -91,7 +97,7 @@
   .informacion img{
     border: solid 5px #1428db;
     border-radius: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .data{
     display: flex;
@@ -176,6 +182,43 @@
     height: auto;
     border: solid 5px #1428db;
     border-radius: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
-  
+  .filter button {
+  cursor: pointer;
+  background-color: transparent;
+  /*border: 2px solid #fff;*/
+  border: 2px solid #6e7dab;
+  border-radius: 10px;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.filter button a {
+  text-decoration: none;
+  /*color: #fff;*/
+  color: #6e7dab;
+}
+.filter button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  /*background-color: #35a7ff;*/
+  background-color: #1428db;
+  color: #fff;
+  border-radius: 7px;
+  z-index: -1;
+  transition: width 1s;
+}
+.filter button:hover .overlay {
+  width: 100%;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <title>Web Scraping</title>
+    <link rel="stylesheet" href="../sdatos.css" />
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+          <div class="logo">             
+            <a href="#">PORTFOLIO</a>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li><a href="../index.html" onclick="seleccionar()">Return</a></li>
+          </nav>
+        </header>
+      </div>
+   <section>
+    <div class="titulo">
+      <h1>Web Scraping</h1>
+      <p>Business Case – GE </p>
+    </div>
+
+    <div  class="informacion">
+      <h2>Context</h2>
+      <p>A growing fintech company is looking to scale its B2B lead acquisition process. Currently, much of this task is done manually: team members 
+        search for companies on public sites (such as online directories or chambers of commerce), 
+        copy the information into spreadsheets, and then follow up commercially.</p>
+      <p>This process presents two major problems: </p>
+      <P><span>1. Volume:</span> few leads are generated per week.</P>
+      <P><span>2. Low quality:</span> leads do not always meet key criteria such as industry, size, or country. </p></P>
+      <p>The goal is to automate this first stage to generate a broader, cleaner, and more useful lead base for sales and marketing teams.</p>
+      <!-- <img src="../Imagenes/alteryx-cars.png" alt="Flow Alteryx Cars">  -->
+    </div>
+
+    <div class="dashconte">
+      <h2>Part 1 – Strategic Approach</h2>
+      <p>If you were assigned this project as the person in charge, how would you approach it? </p>
+    </div>
+  <!--<section class="dashboard">
+    <div class="first">
+      <p><i class="fa-solid fa-earth-americas fa-beat"></i> <span>Country:</span> it shows the corresponding countries where the car brands were created.</p>
+      <p><i class="fa-solid fa-building fa-beat"></i>	<span>Company:</span> Car company.
+      <p><i class="fa-solid fa-car fa-beat"></i> <span>Model:</span> Shows the different models of cars in each company.</p>
+      <p><i class="fa-solid fa-horse fa-beat"></i>	<span>Horsepower:</span> It is the horsepower that each car model has.</p>
+      <p><i class="fa-solid fa-rocket fa-beat"></i>	<span>Torque:</span> It is the amount of force necessary to produce a rotational movement.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i>	<span>Transmission Type:</span> The number of gears a car has.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i>	<span>Drivetrain:</span> The type of transmission in an automobile.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i> <span>Fuel Economy:</span> It is the economy of the car.</p>
+      <p><i class="fa-solid fa-hashtag fa-beat"></i> <span>Number of Doors:</span> The number of doors of each car. </p>
+    </div>
+    <div class="second">
+      <p><i class="fa-solid fa-calendar-days fa-beat"></i> <span>Model Year Range:</span> The period of time it was on the market.</p>
+      <p><i class="fa-solid fa-car fa-beat"></i> <span>Body Type:</span> We are talking about the type of bodywork.</p>
+      <p><i class="fa-solid fa-microchip fa-beat"></i> <span>Engine Type:</span> It is the type of engine of each car.</p>
+      <p><i class="fa-solid fa-hashtag fa-beat"></i> <span>Number of Cylinders:</span> It is the number of cylinders that the engines have.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>Price:</span> The price of each car in dollars.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>COL Price:</span> It is the price of each car in Colombian pesos.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>BRL Price:</span> The price of each car in Reais.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>ARG Price:</span> It is the price of each car in Argentinean pesos.</p>
+      <p><i class="fa-solid fa-money-bill fa-beat"></i> <span>MXN: Price:</span> It is the price of each car in Mexican Pesos.</p>
+    </div>
+  </section> -->
+  <div class="filter">
+    <p>
+      To begin with the strategic approach, it is important to understand the main issues that are occurring. In this case, they are <span>insufficient volume and low-quality leads.</span> 
+      The appropriate path to address these issues is to first contact the team that is performing this search, see how they are developing it from the start, and determine exactly 
+      where they are failing. Once the step where they are failing is identified, our team can step in to improve certain functions automatically.
+    </p>
+    <p>
+      Everything that is done manually—such as searching for companies on public websites and copying the information into templates—can be transformed. For the team performing these tasks, 
+      it may feel very repetitive because they may find large volumes of data, and reviewing them one by one can <span>lead to mistakes</span> and <span>wasted time</span>, essentially <span>creating a bottleneck.</span>  
+    </p>
+    <p>
+      First, we must solve the initial problem, which is the insufficient volume. We need to request a meeting with the team to understand the steps they are following, have them share the websites where they obtain the information, 
+      and specify which variables or data they are using—such as contact information, company name, company link, company description, among other variables. By understanding what is needed, I can begin <span>developing a Python script using 
+      different libraries</span> depending on the website, <span>to automate the data download, reducing time by 80%.</span> This will allow us to obtain a greater volume of data and reach more leads per week.
+    </p>
+    <p>
+      Second, we have the issue of low-quality leads. When downloading the data, the team is not keeping in mind the corresponding criteria such as industry, size, or country. 
+      Therefore, we should create a criteria dictionary that establishes which industries we should target, the minimum company size we should consider, and the countries we are interested in contacting. 
+      By having a well-defined and team-approved criteria dictionary, we can perform a much <span>deeper data cleaning process using Python, SQL, or Alteryx</span> to execute a complete <span>ETL process.</span> This will allow us to present the data in a dashboard, 
+      where they can see the number of companies per country and other relevant information so that contacting companies becomes more efficient and leads can be improved per week.
+    </p>
+  </div>
+
+  <div class="dashconte">
+      <h2>Part 2 – Technical development </h2>
+      <p>Develop a Python script that:</p>
+    </div>
+  <div class="filter">
+    <p>● Goes to https://www.amarillas.cl.</p>
+    <p>● Searches for the following categories: “Importacion,” “Exportacion,” “Comercio.”</p>
+    <p>● Automatically scrolls through all the results pages.</p>
+    <p>● Extracts the data you consider relevant for evaluating the quality of the lead for each company (free choice of fields).</p>
+    <p>● Generate an Excel file with: Leads sheet and Dictionary_fields sheet</p>
+    <p>● Design a simple lead scoring scheme to prioritize the leads obtained.</p>
+    <p>● Define criteria and weights based on the data you collected.</p>
+    <p>● Calculate a numerical score for each lead and add the following columns to the leads sheet: Score (0–100 suggested) and Reason_score (brief explanation of what factors drove the score) </p>
+    <p>● Sort the leads by Score and identify the Top 25.</p>
+    <p>
+        To perform web scraping, we will use the Selenium library together with the webdriver-manager library. We must also import time so that when we run the script, we can see the result at the end. 
+        Finally, we import pandas to perform data manipulation.
+    </p>
+    <img src="../Imagenes/Librerias.png" alt="Librerias">
+    <p>
+        We have to create the main list that would be.
+    </p>
+    <img src="../Imagenes/Lista_categoria.png" alt="Lista_categoria">
+    <p>
+        We need to create a browser, so in this script we will install the latest version of Chrome and instruct it to open with certain specifications. 
+        Finally, we create a variable where all the data obtained will be stored.
+    </p>
+    <img src="../Imagenes/Navegador.png" alt="Navegador">
+    <p>
+        At this point, we must consider that we need to search for three categories, so we must create a for loop and, within this loop, begin to call the URL and add the categories to search for.
+    </p>
+    <img src="../Imagenes/Link.png" alt="Link">
+    <p>
+        When we find the categories, we must extract the most important data, such as Name, URL, Information, and cell phone number. When we find this data, we must identify it with its category and save it in the corresponding variable.
+    </p>
+    <img src="../Imagenes/Datos.png" alt="Librerias">
+    <p>
+        We already have the data from the first page. Now we need you to click on the next button to bring us the rest of the data. When you can't find the button, stop and send us a message saying “No more pages” for the category type, 
+        and it will give us the total number of records captured.
+    </p>
+    <img src="../Imagenes/Boton.png" alt="Boton">
+    <p>
+        Now, to finish, we need to use the pandas library to create the lead scoring, where we will assign scores to the variables that contain data. However, for the Name and Cell Phone columns, we gave them a weight of 30, and for the 
+        Information and URL columns, we gave them a weight of 20. If there is no data, it will assign a value of 0. Finally, we have to add up the Lead scoring.
+    </p>
+    <img src="../Imagenes/lead scoring.png" alt="Lead_scoring">
+    <p>
+        We must define why that lead scoring value was obtained, so we have to place each column where, if the data is not empty, then put Valid Name (+30), and if the opposite is true, then put No Name (+0). This applies to all columns 
+        that were given a weight. Finally, create a column to store the result, and then organize the data to obtain the top 25.
+    </p>
+    <img src="../Imagenes/razon.png" alt="Razon">
+    <p>
+        For the last step, we create a variable containing the dictionary explaining the previous columns so that the person who has to enter the data can understand the column, description, origin, and expected format.
+        We create our Excel file, which will have three sheets: the first contains all the data with the lead scoring, the second is the top 25, and the third is the dictionary.
+    </p>
+    <img src="../Imagenes/diccionario.png" alt="Diccionario">
+    <button>
+          <a href="../Imagenes/amarillo7.py" download="">
+            Download File.py <i class="fa-solid fa-download"></i
+          ></a>
+          <span class="overlay"></span>
+        </button>
+  </div>
+  </section> 
+</body>
+</html>
